@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-01-05T17:42:11.452Z",
+    "end": "2023-01-05T17:42:13.746Z",
+    "duration": 2294,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f233b5c4-92ff-4a46-a09f-3842ef65a434",
+      "title": "",
+      "fullFile": "cypress/e2e/iFrames/iFrameTesting.cy.js",
+      "file": "cypress/e2e/iFrames/iFrameTesting.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "961ecce7-890a-451c-90ad-c2fc3a90469b",
+          "title": "Working with modal screens",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate the text of an element inside the iframe",
+              "fullTitle": "Working with modal screens Validate the text of an element inside the iframe",
+              "timedOut": null,
+              "duration": 940,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://webdriveruniversity.com/IFrame/index.html');\ncy.get('#frame').iframe('body #button-find-out-more > b').should('include.text', 'Find Out More!');",
+              "err": {},
+              "uuid": "83cf7788-9ee8-4993-8a19-dc69d9b1743a",
+              "parentUUID": "961ecce7-890a-451c-90ad-c2fc3a90469b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "83cf7788-9ee8-4993-8a19-dc69d9b1743a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 940,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
